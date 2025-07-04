@@ -1,7 +1,11 @@
 fastapi
-uvicorn
-langchain
+uvicorn[standard]
+langchain>=0.2.0
 chromadb
-transformers
 sentence-transformers
+transformers
+torch
+huggingface-hub
+pydantic
+gradio
 python-dotenv
