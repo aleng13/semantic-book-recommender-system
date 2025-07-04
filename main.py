@@ -115,7 +115,11 @@ def recommend_books(user_query: UserQuery):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+    import os
+
+    port = int(os.environ.get("PORT", 10000))  # fallback to 10000 for local dev
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
 
 
 # You can add more endpoints here if needed, e.g., for direct sentiment analysis
