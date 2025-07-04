@@ -113,6 +113,11 @@ def recommend_books(user_query: UserQuery):
     print(f"Returning {len(recommendations_list)} recommendations.")
     return {"recommendations": recommendations_list}
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=10000)
+
+
 # You can add more endpoints here if needed, e.g., for direct sentiment analysis
 # @app.post("/analyze-text")
 # def analyze_text(request: SentimentAnalysisRequest):
