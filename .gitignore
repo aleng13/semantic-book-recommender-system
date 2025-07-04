@@ -1,0 +1,20 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+venv/
+ENV/
+.venv/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Ignore Jupyter checkpoint folders
+.ipynb_checkpoints/
+
+# Ignore environment variables
+.env
+
+# VSCode folder
+.vscode/
